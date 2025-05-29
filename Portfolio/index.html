@@ -41,7 +41,6 @@
         <a href="#" class="nav-item" data-section="contact">CONTACT</a>
     </nav>
 
-    <!-- 🌠 Intro Overlay -->
     <div class="intro-overlay" id="introOverlay">
         <div class="intro-content">
             <h1 class="intro-title">HELLO TO THE FUTURE</h1>
@@ -49,11 +48,14 @@
         </div>
     </div>
 
+    <div id="cursor-trail-container"></div>
+
     <div class="floating-element element-1"></div>
     <div class="floating-element element-2"></div>
 
     <div class="future-container">
         <section id="home" class="active" style="overflow: hidden">
+            <canvas id="threejs-background"></canvas>
             <div class="future-card">
                 <h1 class="future-heading">WELCOME TO THE FUTURE</h1>
                 <div class="about-content">
@@ -66,14 +68,13 @@
             </div>
         </section>
 
-        <!-- 👨‍💻 About Section -->
         <section id="about">
             <div class="future-card">
                 <h1 class="future-heading">ABOUT ME</h1>
                 <div class="about-content">
                     <div class="profile-img-container">
                         <div class="profile-img-border"></div>
-                        <img src="Images/WhatsApp%20Image%202025-03-31%20at%2022.09.33_cf3d9e56.jpg" alt="Profile" class="profile-img">
+                        <img src="Images/DeWatermark.ai_1748512990329.jpg" alt="Profile" class="profile-img">
                     </div>
                     <p class="bio-text">
                         I'm Abdo Ahmed, a frontend developer from Alexandria with a passion for coding and
@@ -90,7 +91,6 @@
             </div>
         </section>
 
-        <!-- 🛠️ Skills Section -->
         <section id="skills">
             <div class="future-card">
                 <h1 class="future-heading">TECHNOLOGIES</h1>
@@ -113,10 +113,6 @@
                             <i class="fab fa-r skill-icon" style="color: #61dafb;"></i>
                             <span class="skill-name">R</span>
                         </div>
-<!--                        <div class="skill-item">-->
-<!--                            <i class="fab fa-node-js skill-icon" style="color: #68a063;"></i>-->
-<!--                            <span class="skill-name">Node.js</span>-->
-<!--                        </div>-->
                         <div class="skill-item">
                             <i class="fab fa-python skill-icon" style="color: #3776ab;"></i>
                             <span class="skill-name">Python</span>
@@ -164,7 +160,6 @@
             </div>
         </section>
 
-        <!-- 🚀 Projects Section -->
         <section id="projects">
             <div class="future-card">
                 <h1 class="future-heading">MY PROJECTS</h1>
@@ -236,10 +231,10 @@
                         </div>
                     </div>
                     <div class="project-card">
-                        <img src="Images/Screenshot%202025-03-31%20225949.png" alt="Project 1" class="project-image">
+                        <img src="Images/img.png" alt="Project 1" class="project-image">
                         <h3 class="project-title">AWS File Sharing System</h3>
                         <p class="project-description">
-                            Upload your files to Amazon S3 with our lightweight web application. 
+                            Upload your files to Amazon S3 with our lightweight web application.
                             Perfect for team collaboration and personal storage.
                         </p>
                         <div class="project-tags">
@@ -255,11 +250,30 @@
                             <a href="https://github.com/AbdoAhmedAbdelmonem/AWS-S3" class="btn btn-secondary">View Repository</a>
                         </div>
                     </div>
+                    <div class="project-card">
+                        <img src="Images/img_1.png" alt="Project 1" class="project-image">
+                        <h3 class="project-title">AURA Multiple Linear Regression Analysis</h3>
+                        <p class="project-description">
+                            A full stack developed project with an awesome productive team aimed
+                            to regression analysis for multiple linear regression with statistics
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JAVASCRIPT</span>
+                            <span class="tag">MOBILE RESPONSIVE</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Flask Framework</span>
+                        </div>
+                        <div class="btn-group">
+                            <a href="https://aura-mlr.netlify.app/" class="btn btn-primary">View Project</a>
+                            <a href="https://github.com/AbdoAhmedAbdelmonem/AURA-MLR" class="btn btn-secondary">View Repository</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- 📧 Contact Section -->
         <section id="contact">
             <div class="future-card">
                 <h1 class="future-heading">LET'S BUILD THE FUTURE</h1>
@@ -281,6 +295,7 @@
             </div>
         </section>
     </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
